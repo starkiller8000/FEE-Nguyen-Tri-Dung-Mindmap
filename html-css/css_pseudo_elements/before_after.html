@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css pseudo classes</title>
+        <style>
+            * {
+                margin: 0;
+            }
+
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(190, 124, 157);
+            }
+
+            .box::before {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: aliceblue;
+            }
+
+            .box::after {
+                content: "Hello world";
+                color: red;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+
+        <h1>CSS pseudo elements</h1>
+        <h1>CSS pseudo elements</h1>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+.box1 .item1 {
+    color: blue;
+}
+
+.item1.item2 {
+    font-family: 'Courier New', Courier, monospace;
+}

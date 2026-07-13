@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>centralize</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .box {
+                background-color: orange;
+                height: 100px;
+                display: flex;
+            }
+
+            h3 {
+                margin: auto;
+                position: relative;
+            }
+
+            h3::before {
+                position: absolute;
+                content: "";
+ 
+                border-left: 3px solid #333 ;
+                height: 50px;
+                top: 50%;
+                left: -10px;
+                transform: translateY(-50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <h3>CENTER ME</h3>
+        </div>
+    </body>
+</html>
